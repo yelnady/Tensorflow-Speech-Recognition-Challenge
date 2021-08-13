@@ -18,7 +18,7 @@ from sklearn.preprocessing import LabelEncoder
 
 model = load_model('saved_model/my_model.h5')
 
-port = 12390
+#port = 12390
 
 threads = [Thread()]
 def project_id():
@@ -28,9 +28,9 @@ def project_id():
     return info['project_id']
 
 
-base_url = "/%s/port/%s/" % (project_id(), port)
-static_url = "/%s/port/%s/static" % (project_id(), port)
-app = Flask(__name__, static_url_path=static_url)
+#base_url = "/%s/port/%s/" % (project_id(), port)
+#static_url = "/%s/port/%s/static" % (project_id(), port)
+app = Flask(__name__)
 
 classes=[ 'dog', 'one', 'down', 'right', 'cat', 'bed', 'up', 'eight', 'marvin', 'six', 'nine', 'four', 'five', 'yes', 'three', 'wow', 'sheila', 'zero', 'seven', 'happy', 'go', 'bird', 'two', 'stop', 'off', 'tree',  'house', 'on', 'left', 'no']
 
@@ -50,13 +50,13 @@ def predict(audio_path):
     return classes[index]
 
 
-@app.route(base_url, methods=['POST', 'GET'])
+@app.route('/', methods=['POST', 'GET'])
 def home():
     name = "TensorFlow Speech Recognition Challenge - Universal"
     return render_template('Speech-Recognition---Kaggle.html', name=name)
 
 
-@app.route(base_url+'/predict', methods=['POST', 'GET'])
+@app.route('/predict', methods=['POST', 'GET'])
 def youtube_url():
     global threads
     print('I am predicting! Please Wait!')
@@ -65,7 +65,7 @@ def youtube_url():
     prediction = predict('static/audio.wav')
     return prediction
 
-@app.route(base_url+'/thread-check', methods=['POST', 'GET'])
+@app.route('/thread-check', methods=['POST', 'GET'])
 def thread_check():
     global threads
     return "1" if threads[0].is_alive() else "0"
