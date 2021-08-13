@@ -15,7 +15,8 @@ from werkzeug.datastructures import  FileStorage
 from threading import Thread, Event
 import librosa
 from sklearn.preprocessing import LabelEncoder
-
+import tensorflow as tf
+tf.keras.backend.clear_session() 
 model = load_model('saved_model/my_model.h5')
 
 #port = 12390
