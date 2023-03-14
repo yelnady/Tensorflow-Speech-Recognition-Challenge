@@ -73,10 +73,9 @@ def thread_check():
     
 if __name__ == "__main__":
     # you will need to change code.ai-camp.org to other urls if you are not running on the coding center.
-    print(
-        "Try to open\n\n    https://cocalcg12.ai-camp.org" + base_url + '\n\n')
+    print("Try to open\n\n    localhost:12345" + '\n\n')
     # We don't need to call app.run(), we just call socketio to run everything since it's a flask wrapper.
     # We need also to have .js and .map file in static, and reference them from the client or html side
-    app.run( host='0.0.0.0', port=port, debug=True)
+    app.run( host='0.0.0.0', port=12345, debug=True)
     import sys
     sys.exit(0)
