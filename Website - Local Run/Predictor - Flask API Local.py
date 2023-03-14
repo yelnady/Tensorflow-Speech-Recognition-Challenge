@@ -3,7 +3,6 @@ from flask import Flask, render_template, request
 import numpy as np
 import os
 
-import youtube_dl
 from time import time
 from datetime import timedelta
 import moviepy.editor as mp
@@ -41,9 +40,9 @@ classes= list(le.classes_)
 
 def predict(audio_path):
     global classes
-    print("started pPredicting")
+    print("started Predicting")
     samples,sr = librosa.load(audio_path, sr=16_000)
-    audio = librosa.resample(samples, sr, 8_000)
+    audio = librosa.resample(samples, orig_sr=sr, target_sr= 8_000)
     prob = model.predict(audio.reshape(-1,8_000,1)) #prob is a vector of 10 values
     index = np.argmax(prob[0])
     print(classes[index])
@@ -61,7 +60,7 @@ def home():
 def youtube_url():
     global threads
     print('I am predicting! Please Wait!')
-    file_object =request.files.get('file')
+    file_object = request.files.get('file')
     file_object.save('static/audio.wav')
     prediction = predict('static/audio.wav')
     return prediction

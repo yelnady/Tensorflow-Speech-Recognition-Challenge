@@ -1,0 +1,8 @@
+# I have updated the local version on 13 March 2023.
+
+# To run the app --> Keep the html file in the templates folder so the Flask can understand it.
+
+
+# Open the Predictor.py and let it running its API on Localhost:1234, then open the HTML file and write away start using the ML model!
+
+# To Get only requirements for libraries used in your code, then use "pipreqs ."

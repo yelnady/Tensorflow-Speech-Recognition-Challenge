@@ -1,5 +1,5 @@
 .u-section-1 {
-  background-image: url("images/979116_medium2000.jpg");
+  background-image: url("../images/979116_medium2000.jpg");
   background-position: 50% 50%;
 }
 
@@ -325,7 +325,7 @@
     min-height: 353px;
   }
 }.u-section-4 {
-  background-image: linear-gradient(0deg, rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("images/gc55bb46a749407240c9a20efb726981440a23eedfa6d35704a431324e637f861bf57ec7c00212bd5b0967fbbc7d436667c304f61b54914c776e1b78be461d77d_1280.jpg");
+  background-image: linear-gradient(0deg, rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("../images/gc55bb46a749407240c9a20efb726981440a23eedfa6d35704a431324e637f861bf57ec7c00212bd5b0967fbbc7d436667c304f61b54914c776e1b78be461d77d_1280.jpg");
   background-position: 50% 50%;
 }
 
@@ -1117,7 +1117,7 @@
 .u-section-8 .u-image-1 {
   width: 230px;
   height: 230px;
-  background-image: url("images/1_bQYZ7fp_wcjWFwpBbcRS-Q.png");
+  background-image: url("../images/1_bQYZ7fp_wcjWFwpBbcRS-Q.png");
   background-position: 50% 50%;
   box-shadow: 5px 5px 20px 0 rgba(0,0,0,0.4);
   animation-duration: 1000ms;
@@ -1274,7 +1274,7 @@
 .u-section-9 .u-image-1 {
   width: 205px;
   height: 205px;
-  background-image: url("images/lessonlearned.jpg");
+  background-image: url("../images/lessonlearned.jpg");
   background-position: 50% 50%;
   box-shadow: 5px 5px 20px 0 rgba(0,0,0,0.4);
   animation-duration: 1000ms;
@@ -1410,7 +1410,7 @@
 .u-section-10 .u-image-1 {
   width: 197px;
   height: 197px;
-  background-image: url("images/ScreenShot2021-08-09at2.41.00PM.png");
+  background-image: url("../images/ScreenShot2021-08-09at2.41.00PM.png");
   background-position: 50% 50%;
   margin: 0 auto 0 42px;
 }
@@ -1447,7 +1447,7 @@
 .u-section-10 .u-image-2 {
   width: 197px;
   height: 197px;
-  background-image: url("images/ScreenShot2021-08-10at10.52.44AM.png");
+  background-image: url("../images/ScreenShot2021-08-10at10.52.44AM.png");
   background-position: 50% 50%;
   margin: 0 auto 0 42px;
 }
@@ -1484,7 +1484,7 @@
 .u-section-10 .u-image-3 {
   width: 197px;
   height: 197px;
-  background-image: url("images/ScreenShot2021-08-10at10.52.50AM.png");
+  background-image: url("../images/ScreenShot2021-08-10at10.52.50AM.png");
   background-position: 50% 50%;
   margin: 0 auto 0 42px;
 }
@@ -1521,7 +1521,7 @@
 .u-section-10 .u-image-4 {
   width: 197px;
   height: 197px;
-  background-image: url("images/ScreenShot2021-08-10at10.52.59AM.png");
+  background-image: url("../images/ScreenShot2021-08-10at10.52.59AM.png");
   background-position: 50% 50%;
   margin: 0 auto 0 42px;
 }
@@ -1774,7 +1774,7 @@
 .u-section-11 .u-image-1 {
   width: 197px;
   height: 197px;
-  background-image: url("images/03EC52EC-9315-4458-BAC9-D7789FC466CB.jpeg");
+  background-image: url("../images/03EC52EC-9315-4458-BAC9-D7789FC466CB.jpeg");
   background-position: 50% 50%;
   margin: 0 auto;
 }
@@ -1811,7 +1811,7 @@
 .u-section-11 .u-image-2 {
   width: 197px;
   height: 197px;
-  background-image: url("images/ScreenShot2021-08-10at11.33.32AM.png");
+  background-image: url("../images/ScreenShot2021-08-10at11.33.32AM.png");
   background-position: 50% 50%;
   margin: 0 auto;
 }
@@ -1848,7 +1848,7 @@
 .u-section-11 .u-image-3 {
   width: 197px;
   height: 197px;
-  background-image: url("images/ScreenShot2021-08-10at11.33.40AM.png");
+  background-image: url("../images/ScreenShot2021-08-10at11.33.40AM.png");
   background-position: 50% 50%;
   margin: 0 auto;
 }
@@ -1885,7 +1885,7 @@
 .u-section-11 .u-image-4 {
   width: 197px;
   height: 197px;
-  background-image: url("images/IMG_8494.jpeg");
+  background-image: url("../images/IMG_8494.jpeg");
   background-position: 50% 50%;
   margin: 0 auto;
 }
